@@ -1,0 +1,267 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10400,        259]
+NotebookOptionsPosition[      9742,        240]
+NotebookOutlinePosition[     10137,        256]
+CellTagsIndexPosition[     10094,        253]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.8099908741259327`*^9, 3.809990889811693*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"f292bb10-9bc5-46b4-aeff-61b811f8de7a"],
+
+Cell[BoxData[
+ RowBox[{"<<", "SIPCalc`"}]], "Input",
+ CellChangeTimes->{{3.809990893605599*^9, 3.809990898467437*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"cfdc5554-46ba-4c15-8dc4-232811402836"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"interface", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.809992776675699*^9, 3.809992779625551*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"2aca7aee-4aba-4ebc-80c8-df6c85616481"],
+
+Cell[BoxData[
+ DynamicModuleBox[{SIPCalc`sip$$ = 1000, SIPCalc`years$$ = 10, 
+  SIPCalc`interest$$ = 12, SIPCalc`data$$ = CompressedData["
+1:eJwV0XlMz3Ecx/Hn+/PV1FyZKxMVjRiWYzQsvxmJJS3Dz1zJ3EeM3FruJK25
+VkaLMVnOmWuGXGFCM0fzB82GlmkVq9iYlz8+/3z3+Xwf2+sZkZqWvNIB/88G
+nWoPKlrCjVZQ1A6yOsCqLuDvBr4wiOoFwX2guR9UDYQng+HSMMgfAZmxsHgM
+JMVBzEQIT4TAZKibCpUzoHQ2FM+DvAWylkDKCohfDdHpELJR+Fb5mfJ3ys+S
+nyM/T/4h+fnyj8kvkn9K/hn5JfIvyr8i/7r8W/Lvyn8g/7H8Z/Jfyn8l/638
+9/I/yP8k/4v8Gvm18hvkN8r/Lf+PfDNuBBhFQUZWG2NVe8PfyfB1NaK6G8ER
+RnOkURVlPOlvXIo28ocamTHG4lFGks+IGWuExxuBCUbdZKNyilE63SieaeTN
+NTbMN1IWGfHLjOg0I2SNwXqjepNRkSF/u/zd8rPl58o/IP+I/KPyC+WfkH9a
+/ln55+Vfln9V/k35t+Xfk/9I/lP55fIr5L82GtS3Vn1/qm9AsDbqCONCID1U
+O4ZDYyTE9YWTAyBIbTerbbPabhsNncfCtXhInQTd1PXjNLg4E3JS9F5Nly2F
+FWmwZS0UqOf9DL3dAaP2Qm4ufD8IMwrgdSHMUsMfZ9VN/RKuQlu1+1gKd8rg
+fDmUqNnNSnijXu4zxH6D7Hr42gRT/qpRC2NOK+OP2pwLMZaHGbG9jZ4DjM5q
+0X2kMWyMMW+CUZhk1Gr7JO1ettBIXGnUpBsFW41Zu4wh+3X/sM5xtdCmfu15
+WFtWa8fJZUb5C2PuO21ZZTyuNo7Vq8tvI9tznGrteNPJ0SPMkRHlaBrk2DPS
+MWicoyHR8dzvuJfqeLnc0bjOMXyb4+A+R9ARx9EiR1yJo801R12po/aZvr9z
++D45Dn13BPzS3RYeo4M9gkI96vt4NA3xCPV5pCR4PPR7jF/gUbPa40KGp/96
+/AOmXem4
+  "], SIPCalc`finalValue$$ = 232339, SIPCalc`plot$$ = Graphics[{{}, {{{}, {}, {
+       Hue[0.67, 0.6, 0.6], 
+       Directive[
+        PointSize[
+         Rational[1, 72]], 
+        RGBColor[0.368417, 0.506779, 0.709798], 
+        AbsoluteThickness[1.6]], 
+       Line[CompressedData["
+1:eJw1z01sy3Ecx/FfJEski8RCMhKLhyCCiHmap9mPUUYZZZTRg9SlFzs1Dj18
+s1NP5dA4NBKJCycOJBIi/rIgC1JGGfVUT/U0Rj0Nyzx83muyvPPap9/238l7
+90f2jXDOHfj796969Tf9jz/o+Yfqj+KRasdxPJr9FB6rpk/jcbz/LJ6gRs/j
+SdxfxFPU7CU8lc/rwtPV1GU8g8+/imeq8W48m++7hueo4Rt4Lt+fx/Vq7iae
+x/PcwvPVTA9ewPPdxgvVzjt4Ec9bwA1q8i5ezPPfw0vURC9eyu+5j5epsQd4
+Ob+viBvVyEO8Qg0/wk1q6DH2qn+iGq57yr5SzWHDtSX2VWoWG655xt6sZrDh
+6ufsq9U0Nlz1gn2N2okNDw3vITX1kh0PYLdWTb5ixxXs1qkdZXbch12LmnjN
+jsvYrVfjb9hxCbsNauwtOy5iF1aj79hxAbuNauQ9O85jt0kN97Hjbuxa1dAH
+dtyF3WbVf6T4AjZc168GsrVjt0XNYS9bLzb22k/cs7dhF1Gz2MvWg4295jP3
+7K3YbVUz2Mt2HRt7dYV79hbstqlp7GW7go296gv37M3Ytamd2MsWYGMfGr5n
+b/zK/XY1hb1s57CxD+CAveEb9zvUJPayncHGXsEBe/137qNqB/ayncTG3ocD
+9lk/uN+pJrCX7QQ29jIO2KcNcL9LjWMv2zFs7CUcsE/8yX27GsNetiPY2Is4
+YB//i/vdahR72Q5jYy/ggH3Mb+73qBHsZTuEjT2PA/ZRg9zH1PCg/wPpdy/v
+
+        "]]}, {
+       Hue[0.9060679774997897, 0.6, 0.6], 
+       Directive[
+        PointSize[
+         Rational[1, 72]], 
+        RGBColor[0.880722, 0.611041, 0.142051], 
+        AbsoluteThickness[1.6]], 
+       Line[CompressedData["
+1:eJw1zklIlGEAxvE309TqEBEtJDiVlNmCttpifpMttlguWVpatmgdhLxIQtvX
+JaQCvRTSpYEO1SUmKJxDh5cIaSEatVXLpn3RyhbN9uV7/g0MD7953mfed8yW
+nfnlUcaYmr/ff6lPd6YX9XUOPyhDJ3Cc8tUpPEQZE8TDlL7zeKRycQgnKKsv
+Yp+yyOKxyt2XcJLy5GU8XtnchJO9dKOv4hQ54zqerNxzA09Vb2/iVDmmGafJ
+U1rwNLmoFU/30h68hWfIjbfxTLnzDp6lHHcPz/bSKb2P03X+eBueo769Hc9V
+Jj7E89RXdOD5el/wEc5Q7o/gBeonPMaZuq/5vx0vA3ufyK7sm/SU3q99G3bx
+4Wf0C70sW/CcXjafsMnS+TMv6GW7+SX9Ii8jo1/Ry/YuNov1vqOv6eWywjf0
+S/TeEZ30cqANm6VeOoEuetluf0ufrT7tHb0c+YHNMt137T29bHK66Zfr/AXs
+yuHED/QrdN8h7OLe//1K7bd+pJd9Ldjk6H7/J3o5fA6bVerHfaaXhxzDZrX+
+P76HHu/DJlfZgx25rLKX83LkGbZyYOMX9nle1t/HjmwL+9jLqa3YyuG8r+zz
+5WbsyKbgG3vZvY2tnFv8nX2B+g7syN3bfrCXbRe29NU/2a/R3vxiL1cdwa5s
+R/1mz/nT2BTqPQnGr73sK8eufPostnJ3HzZr5ax+7OVQHXbl9AfYyrUTo9iv
+81y/CzvyjibsynHD+7OXayqwKfIcbMSOHIqPZi83lGArZwexKfYcjo5hL6eu
+x668I4it7MYOYL/ec9Um7MjZIezKZmgsezlQic0Gz8lXsCM3JMWxl/sOYCtn
+R7Ap8VybGc9eDp3ArhwxA9nLZis2pZ59TdiR01MGsZdz67CVq3qw2aj3lgz2
+/wEtZjeo
+        "]]}}, {{
+       Directive[
+        PointSize[
+         Rational[1, 72]], 
+        RGBColor[0.368417, 0.506779, 0.709798], 
+        AbsoluteThickness[1.6]]}, {
+       Directive[
+        PointSize[
+         Rational[1, 72]], 
+        RGBColor[0.880722, 0.611041, 0.142051], 
+        AbsoluteThickness[1.6]]}}, {{
+       Directive[
+        PointSize[
+         Rational[1, 72]], 
+        RGBColor[0.368417, 0.506779, 0.709798], 
+        AbsoluteThickness[1.6]]}, {
+       Directive[
+        PointSize[
+         Rational[1, 72]], 
+        RGBColor[0.880722, 0.611041, 0.142051], 
+        AbsoluteThickness[1.6]]}, {}, {}, {}}, {{
+       Directive[
+        PointSize[
+         Rational[1, 72]], 
+        RGBColor[0.368417, 0.506779, 0.709798], 
+        AbsoluteThickness[1.6]]}, {
+       Directive[
+        PointSize[
+         Rational[1, 72]], 
+        RGBColor[0.880722, 0.611041, 0.142051], 
+        AbsoluteThickness[1.6]]}, {}, {}, {}}}, {{}, {}}}, {
+   DisplayFunction -> Identity, DisplayFunction -> Identity, AspectRatio -> 
+    GoldenRatio^(-1), Axes -> {True, True}, AxesLabel -> {
+      Style["Months", Bold], 
+      Style["Amount", Bold]}, AxesOrigin -> {0, 0}, DisplayFunction :> 
+    Identity, Frame -> {{False, False}, {False, False}}, 
+    FrameLabel -> {{None, None}, {None, None}}, 
+    FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
+    GridLines -> {None, None}, GridLinesStyle -> Directive[
+      GrayLevel[0.5, 0.4]], ImageSize -> {760, 580}, 
+    Method -> {
+     "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
+      "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+          Identity[
+           Part[#, 1]], 
+          Identity[
+           Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+          Identity[
+           Part[#, 1]], 
+          Identity[
+           Part[#, 2]]}& )}}, PlotLabel -> 
+    Style["Investment V/S Return", Bold], 
+    PlotRange -> {{0, 120.}, {0, 232339.}}, PlotRangeClipping -> True, 
+    PlotRangePadding -> {{
+       Scaled[0.02], 
+       Scaled[0.02]}, {
+       Scaled[0.02], 
+       Scaled[0.05]}}, Ticks -> {Automatic, {{0, 0}, {
+        Rational[232339, 5], 46467}, {
+        Rational[464678, 5], 92935}, {
+        Rational[697017, 5], 139403}, {
+        Rational[929356, 5], 185871}, {232339, 232339}}}}]}, 
+  TagBox[GridBox[{
+     {
+      TagBox[GridBox[{
+         {
+          InterpretationBox[Cell[BoxData[
+            FormBox["\<\"SIP Amount (INR)\"\>", TextForm]], "InlineText",
+            ExpressionUUID->"b82fc060-0889-4f53-af95-d869309dd20a"],
+           Text["SIP Amount (INR)"]], 
+          InputFieldBox[Dynamic[SIPCalc`sip$$], Number,
+           ContinuousAction->True,
+           FieldSize->{13, 1}]},
+         {
+          InterpretationBox[Cell[BoxData[
+            FormBox["\<\"Duration (Years)\"\>", TextForm]], "InlineText",
+            ExpressionUUID->"8d0d7eca-4df9-4111-a18f-b2e9823baf14"],
+           Text["Duration (Years)"]], 
+          InputFieldBox[Dynamic[SIPCalc`years$$], Number,
+           ContinuousAction->True,
+           FieldSize->{13, 1}]},
+         {
+          InterpretationBox[Cell[BoxData[
+            FormBox["\<\"Rate of Interest\"\>", TextForm]], "InlineText",
+            ExpressionUUID->"469d681a-f45b-462b-aa95-15ac1f043a04"],
+           Text["Rate of Interest"]], 
+          InputFieldBox[Dynamic[SIPCalc`interest$$], Number,
+           ContinuousAction->True,
+           FieldSize->{13, 1}]},
+         {
+          ButtonBox[
+           InterpretationBox[Cell[BoxData[
+             FormBox["\<\"Final Value (INR)\"\>", TextForm]], "InlineText",
+             ExpressionUUID->"f674cff3-98ca-43ba-b303-cafc48a033a8"],
+            Text["Final Value (INR)"]],
+           Appearance->Automatic,
+           
+           ButtonFunction:>(
+            SIPCalc`data$$ = 
+             SIPCalc`calculateSIP[
+              SIPCalc`sip$$, SIPCalc`years$$, SIPCalc`interest$$]; 
+            SIPCalc`finalValue$$ = Last[
+               Part[SIPCalc`data$$, 2]]; 
+            SIPCalc`plot$$ = SIPCalc`plotSIP[SIPCalc`data$$]),
+           Enabled->Dynamic[
+             And[
+              NumberQ[SIPCalc`sip$$], 
+              NumberQ[SIPCalc`years$$], 
+              NumberQ[SIPCalc`interest$$]]],
+           Evaluator->Automatic,
+           Method->"Preemptive"], 
+          InputFieldBox[Dynamic[SIPCalc`finalValue$$], Number,
+           Enabled->False,
+           FieldSize->{13, 1}]}
+        },
+        AutoDelete->False,
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]},
+     {
+      PaneBox[
+       DynamicBox[ToBoxes[SIPCalc`plot$$, StandardForm],
+        ImageSizeCache->{760., {288., 292.}}],
+       BaseStyle->(Background -> GrayLevel[1]),
+       ImageSize->{800, 600}]}
+    },
+    DefaultBaseStyle->"Column",
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Column"],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{3.809992780505041*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"51e0eccb-8266-4309-a02b-e9dc3d8eb71b"]
+}, Open  ]]
+},
+WindowSize->{1366, 686},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (March 18, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"0a58eb75-e955-4bd4-9887-a0bce30b434f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 269, 5, 30, "Input",ExpressionUUID->"f292bb10-9bc5-46b4-aeff-61b811f8de7a"],
+Cell[830, 27, 196, 3, 30, "Input",ExpressionUUID->"cfdc5554-46ba-4c15-8dc4-232811402836"],
+Cell[CellGroupData[{
+Cell[1051, 34, 201, 3, 30, "Input",ExpressionUUID->"2aca7aee-4aba-4ebc-80c8-df6c85616481"],
+Cell[1255, 39, 8471, 198, 743, "Output",ExpressionUUID->"51e0eccb-8266-4309-a02b-e9dc3d8eb71b"]
+}, Open  ]]
+}
+]
+*)
+
